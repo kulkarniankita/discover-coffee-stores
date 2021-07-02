@@ -65,6 +65,11 @@ export default function Home(props) {
       <Head>
         <title>Coffee Connoisseur</title>
         <link rel="icon" href="/favicon.ico" />
+
+        <meta
+          name="description"
+          content="allows you to discover coffee stores"
+        ></meta>
       </Head>
 
       <main className={styles.main}>
@@ -75,7 +80,12 @@ export default function Home(props) {
         {locationErrorMsg && <p>Something went wrong: {locationErrorMsg}</p>}
         {coffeeStoresError && <p>Something went wrong: {coffeeStoresError}</p>}
         <div className={styles.heroImage}>
-          <Image src="/static/hero-image.png" width={700} height={400} />
+          <Image
+            src="/static/hero-image.png"
+            width={700}
+            height={400}
+            alt="hero image"
+          />
         </div>
 
         {coffeeStores.length > 0 && (
