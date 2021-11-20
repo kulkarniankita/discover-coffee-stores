@@ -32,8 +32,8 @@ const createCoffeeStore = async (req, res) => {
               },
             ]);
 
-            const records = getMinifiedRecords(createRecords);
-            res.json(records);
+            const minRecords = getMinifiedRecords(createRecords);
+            res.json(minRecords);
           } else {
             res.status(400);
             res.json({ message: "Id or name is missing" });
