@@ -18,6 +18,26 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Setup Local Environment with Coffee Stores
+
+You need to setup a few API keys for this project to be setup correctly otherwise you won't see any coffee stores.
+
+- [Unsplash Access Key](https://unsplash.com/documentation)
+- [Airtable Base and API Key](https://www.airtable.com/api)
+- [Foursquare Client ID and Client Secret Key](https://developer.foursquare.com/)
+
+For that, you can create a .env.local file in your project as [shown in docs](https://nextjs.org/docs/basic-features/environment-variables#loading-environment-variables) that will look like this:
+
+```
+AIRTABLE_BASE_KEY=<REPLACE THIS>
+AIRTABLE_API_KEY=<REPLACE THIS>
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=<REPLACE THIS>
+NEXT_PUBLIC_FOURSQUARE_CLIENT_SECRET=<REPLACE THIS>
+NEXT_PUBLIC_FOURSQUARE_CLIENT_ID=<REPLACE THIS>
+```
+
+You can retrieve the above environment values by referring their docs linked above.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
