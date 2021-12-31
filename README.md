@@ -24,7 +24,7 @@ You need to setup a few API keys for this project to be setup correctly otherwis
 
 - [Unsplash Access Key](https://unsplash.com/documentation)
 - [Airtable Base and API Key](https://www.airtable.com/api)
-- [Foursquare Client ID and Client Secret Key](https://developer.foursquare.com/)
+- [Foursquare API Key](https://developer.foursquare.com/docs/migrate-to-newest-places-api-version#generating-api-keys)
 
 For that, you can create a .env.local file in your project as [shown in docs](https://nextjs.org/docs/basic-features/environment-variables#loading-environment-variables) that will look like this:
 
@@ -32,8 +32,7 @@ For that, you can create a .env.local file in your project as [shown in docs](ht
 AIRTABLE_BASE_KEY=<REPLACE THIS>
 AIRTABLE_API_KEY=<REPLACE THIS>
 NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=<REPLACE THIS>
-NEXT_PUBLIC_FOURSQUARE_CLIENT_SECRET=<REPLACE THIS>
-NEXT_PUBLIC_FOURSQUARE_CLIENT_ID=<REPLACE THIS>
+NEXT_PUBLIC_FOURSQUARE_API_KEY=<REPLACE THIS>
 ```
 
 You can retrieve the above environment values by referring their docs linked above.
