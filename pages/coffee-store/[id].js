@@ -13,7 +13,7 @@ import { fetchCoffeeStores } from "../../lib/coffee-stores";
 
 import { StoreContext } from "../../store/store-context";
 
-import { isEmpty } from "../../utils";
+import { fetcher, isEmpty } from "../../utils";
 
 export async function getStaticProps(staticProps) {
   const params = staticProps.params;
@@ -104,7 +104,7 @@ const CoffeeStore = (initialProps) => {
 
   const [votingCount, setVotingCount] = useState(0);
 
-  const { data, error } = useSWR(`/api/getCoffeeStoreById?id=${id}`);
+  const { data, error } = useSWR(`/api/getCoffeeStoreById?id=${id}`, fetcher);
 
   useEffect(() => {
     if (data && data.length > 0) {
