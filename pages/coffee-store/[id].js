@@ -46,13 +46,12 @@ export async function getStaticPaths() {
 
 const CoffeeStore = (initialProps) => {
   const router = useRouter();
-  if (router.isFallback) {
-    return <div>Loading...</div>;
-  }
 
   const id = router.query.id;
 
-  const [coffeeStore, setCoffeeStore] = useState(initialProps.coffeeStore);
+  const [coffeeStore, setCoffeeStore] = useState(
+    initialProps.coffeeStore || {}
+  );
 
   const {
     state: { coffeeStores },
@@ -98,10 +97,14 @@ const CoffeeStore = (initialProps) => {
       // SSG
       handleCreateCoffeeStore(initialProps.coffeeStore);
     }
-  }, [id, initialProps, initialProps.coffeeStore]);
+  }, [id, initialProps, initialProps.coffeeStore, coffeeStores]);
 
-  const { address, name, neighbourhood, imgUrl } = coffeeStore;
-
+  const {
+    address = "",
+    name = "",
+    neighbourhood = "",
+    imgUrl = "",
+  } = coffeeStore;
   const [votingCount, setVotingCount] = useState(0);
 
   const { data, error } = useSWR(`/api/getCoffeeStoreById?id=${id}`, fetcher);
@@ -113,6 +116,10 @@ const CoffeeStore = (initialProps) => {
       setVotingCount(data[0].voting);
     }
   }, [data]);
+
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
 
   const handleUpvoteButton = async () => {
     try {
@@ -158,7 +165,6 @@ const CoffeeStore = (initialProps) => {
             <h1 className={styles.name}>{name}</h1>
           </div>
           <Image
-            alt="banner image"
             src={
               imgUrl ||
               "https://images.unsplash.com/photo-1504753793650-d4a2b783c15e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
