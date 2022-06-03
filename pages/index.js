@@ -8,6 +8,7 @@ import Card from "../components/card";
 import coffeeStores from "../data/coffee-stores.json";
 
 export async function getStaticProps(context) {
+  console.log("hi getStaticProps");
   return {
     props: {
       coffeeStores,
