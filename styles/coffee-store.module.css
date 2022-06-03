@@ -1,0 +1,135 @@
+.container {
+  display: grid;
+  padding-top: 1.75rem /* 28px */;
+  padding-bottom: 1.75rem /* 28px */;
+  padding-left: 1.75rem /* 12px */;
+  padding-right: 0.75rem /* 12px */;
+}
+
+.layout {
+  height: 100%;
+}
+
+.col1 {
+  place-self: center;
+}
+
+.backToHomeLink {
+  margin-top: 6rem /* 96px */;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
+  margin-bottom: 0.5rem /* 8px */;
+  font-weight: 700;
+}
+
+.nameWrapper {
+  margin-bottom: 1rem /* 16px */;
+  margin-top: 1rem /* 16px */;
+}
+
+.name {
+  color: var(--text-white-100);
+  font-size: 2.25rem /* 36px */;
+  line-height: 2.5rem /* 40px */;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.storeImgWrapper {
+  padding-top: 1rem /* 16px */;
+  padding-bottom: 1rem /* 16px */;
+}
+
+.storeImg {
+  box-shadow: var(0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 #0000),
+    0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 #0000,
+    0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  border-radius: 0.75rem /* 12px */;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.col2 {
+  border-radius: 1rem /* 16px */;
+  padding: 1rem /* 16px */;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem /* 8px */;
+  align-self: center;
+  margin-top: 4rem /* 64px */;
+  color: rgba(55, 59, 100, 1);
+}
+
+.iconWrapper {
+  display: flex;
+  margin-bottom: 1rem /* 16px */;
+}
+
+.text {
+  padding-left: 0.5rem /* 8px */;
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  margin: 0;
+  font-weight: 700;
+}
+
+.upvoteButton {
+  width: fit-content;
+  color: var(--text-white-100);
+  margin-top: 1rem /* 16px */;
+  margin-bottom: 1rem /* 16px */;
+  padding-left: 0.5rem /* 8px */;
+  padding-right: 0.5rem /* 8px */;
+  padding-top: 0.5rem /* 8px */;
+  padding-bottom: 0.5rem /* 8px */;
+
+  background-color: var(--text-purple-dark);
+  cursor: pointer;
+  color: white;
+  outline: 0;
+  border: 0px;
+
+  font-size: 1rem;
+}
+
+.upvoteButton:hover {
+  background-color: var(--text-purple);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .layout {
+    padding-left: 2.5rem /* 40px */;
+    padding-right: 2.5rem /* 40px */;
+    height: 100vh;
+  }
+
+  .col2 {
+    width: 75%;
+  }
+}
+
+@media (min-width: 768px) {
+  .layout {
+    padding-left: 2.5rem /* 40px */;
+    padding-right: 2.5rem /* 40px */;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: 100%;
+  }
+
+  .layout {
+    padding-left: 1rem /* 16px */;
+    padding-right: 1rem /* 16px */;
+  }
+}
