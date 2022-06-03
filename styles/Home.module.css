@@ -30,6 +30,14 @@
   justify-content: center;
 }
 
+.heading2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+  color: var(--text-white-100);
+}
+
 /** Breakpoints:
   sm: min-width: 640px;
   md: min-width: 768px;
