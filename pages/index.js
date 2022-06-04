@@ -14,7 +14,7 @@ export async function getStaticProps(context) {
     method: "GET",
     headers: {
       Accept: "application/json",
-      Authorization: "<Add your Foursquare API token here>",
+      Authorization: process.env.FOURSQUARE_API_KEY,
     },
   };
 
