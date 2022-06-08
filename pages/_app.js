@@ -1,7 +1,7 @@
 import { createContext, useReducer } from "react";
 import "../styles/globals.css";
 
-const StoreContext = createContext();
+export const StoreContext = createContext();
 
 export const ACTION_TYPES = {
   SET_LAT_LONG: "SET_LAT_LONG",
