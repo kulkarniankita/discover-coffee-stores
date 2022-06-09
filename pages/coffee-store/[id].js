@@ -100,7 +100,7 @@ const CoffeeStore = (initialProps) => {
 
   const { name, address, neighbourhood, imgUrl } = coffeeStore;
 
-  const [votingCount, setVotingCount] = useState(1);
+  const [votingCount, setVotingCount] = useState(0);
 
   const { data, error } = useSWR(`/api/getCoffeeStoreById?id=${id}`, fetcher);
 
