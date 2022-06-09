@@ -17,7 +17,6 @@ import { fetcher, isEmpty } from "../../utils";
 
 export async function getStaticProps(staticProps) {
   const params = staticProps.params;
-  console.log("params", params);
 
   const coffeeStores = await fetchCoffeeStores();
   const findCoffeeStoreById = coffeeStores.find((coffeeStore) => {
@@ -77,7 +76,6 @@ const CoffeeStore = (initialProps) => {
       });
 
       const dbCoffeeStore = await response.json();
-      console.log({ dbCoffeeStore });
     } catch (err) {
       console.error("Error creating coffee store", err);
     }
@@ -106,7 +104,6 @@ const CoffeeStore = (initialProps) => {
 
   useEffect(() => {
     if (data && data.length > 0) {
-      console.log("data from SWR", data);
       setCoffeeStore(data[0]);
       setVotingCount(data[0].voting);
     }
