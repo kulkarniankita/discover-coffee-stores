@@ -11,6 +11,19 @@ import useTrackLocation from "../hooks/use-track-location";
 import { ACTION_TYPES, StoreContext } from "../store/store-context";
 
 export async function getStaticProps(context) {
+  if (
+    !process.env.NEXT_PUBLIC_FOURSQUARE_API_KEY &&
+    !process.env.AIRTABLE_API_KEY &&
+    !process.env.AIRTABLE_BASE_KEY &&
+    !process.env.NEXT_PUBLIC_UNSPLASH_ACCESS_KEY
+  ) {
+    return {
+      redirect: {
+        destination: "/problem",
+        permanent: false,
+      },
+    };
+  }
   const coffeeStores = await fetchCoffeeStores();
 
   return {
