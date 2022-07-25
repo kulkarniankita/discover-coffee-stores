@@ -1,4 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Before you run the app
+
+Please go through the below details before you run the app.
+
+## Environment Variables
+
+For this app to work, you need to configure the following environment variables in your .env.local file so please create a .env.local file in the root of your project right next to readme.md and the file needs to look like this:
+
+```
+NEXT_PUBLIC_FOURSQUARE_API_KEY=<value>
+AIRTABLE_API_KEY=<value>
+AIRTABLE_BASE_KEY=<value>
+NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=<value>
+```
+
+## Common Errors
+
+If you use Node.js version greater than 16, you may see this problem: https://github.com/vercel/next.js/issues/37300
+
+Example Error:
+
+```
+(node:36337) ExperimentalWarning: The Fetch API is an experimental feature. This feature could change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 33 ms (258 modules)
+error - TypeError
+    at normalizeAndValidateHeaderValue (node:internal/deps/undici/undici:4210:15)
+    at HeadersList.append (node:internal/deps/undici/undici:4268:33)
+    at fill (node:internal/deps/undici/undici:4235:19)
+    at new Request (node:internal/deps/undici/undici:4982:13)
+    at Agent.fetch2 (node:internal/deps/undici/undici:5539:29)
+    at Object.fetch (node:internal/deps/undici/undici:6370:20)
+    at fetch (node:internal/bootstrap/pre_execution:196:25)
+    at fetchCoffeeStores (webpack-internal:///./lib/coffee-stores.js:33:28)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getStaticProps (webpack-internal:///./pages/index.js:44:26) {
+  page: '/'
+}
+```
+
+Solution:
+Downgrade Node.js version to 16 as v18 ships experimental fetch api that can have breaking changes.
 
 ## Getting Started
 
