@@ -1,0 +1,352 @@
+{
+  "results": [
+    {
+      "fsq_id": "51a261ca498ea3d3eaf40876",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13145,
+          "name": "Fast Food Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/fastfood_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 364,
+      "geocodes": {
+        "main": {
+          "latitude": 43.653507,
+          "longitude": -79.400439
+        },
+        "roof": {
+          "latitude": 43.653507,
+          "longitude": -79.400439
+        }
+      },
+      "link": "/v3/places/51a261ca498ea3d3eaf40876",
+      "location": {
+        "address": "28 Kensington Ave",
+        "country": "CA",
+        "cross_street": "",
+        "formatted_address": "28 Kensington Ave, Toronto ON M5T 2J9",
+        "locality": "Toronto",
+        "neighborhood": ["Kensington Market"],
+        "postcode": "M5T 2J9",
+        "region": "ON"
+      },
+      "name": "FIKA Cafe",
+      "related_places": {},
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "4a8d5b48f964a520840f20e3",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 416,
+      "geocodes": {
+        "main": {
+          "latitude": 43.654245,
+          "longitude": -79.400323
+        },
+        "roof": {
+          "latitude": 43.654245,
+          "longitude": -79.400323
+        }
+      },
+      "link": "/v3/places/4a8d5b48f964a520840f20e3",
+      "location": {
+        "address": "30 Saint Andrew St",
+        "country": "CA",
+        "cross_street": "at Spadina Ave",
+        "formatted_address": "30 Saint Andrew St (at Spadina Ave), Toronto ON M5T 1K6",
+        "locality": "Toronto",
+        "neighborhood": ["Kensington Market"],
+        "postcode": "M5T 1K6",
+        "region": "ON"
+      },
+      "name": "Moonbean Coffee Co",
+      "related_places": {},
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "51438b33e4b0a40e33fe5e77",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 380,
+      "geocodes": {
+        "main": {
+          "latitude": 43.654576,
+          "longitude": -79.40117
+        },
+        "roof": {
+          "latitude": 43.654576,
+          "longitude": -79.40117
+        }
+      },
+      "link": "/v3/places/51438b33e4b0a40e33fe5e77",
+      "location": {
+        "address": "191 Baldwin St",
+        "country": "CA",
+        "cross_street": "Kensington Market",
+        "formatted_address": "191 Baldwin St (Kensington Market), Toronto ON M5T 1M1",
+        "locality": "Toronto",
+        "neighborhood": ["Kensington Market"],
+        "postcode": "M5T 1M1",
+        "region": "ON"
+      },
+      "name": "Jimmy's Coffee",
+      "related_places": {},
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "5061dbab498ee603149683e5",
+      "categories": [
+        {
+          "id": 13003,
+          "name": "Bar",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/pub_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 583,
+      "geocodes": {
+        "main": {
+          "latitude": 43.657055,
+          "longitude": -79.405681
+        },
+        "roof": {
+          "latitude": 43.657055,
+          "longitude": -79.405681
+        }
+      },
+      "link": "/v3/places/5061dbab498ee603149683e5",
+      "location": {
+        "address": "388 College St",
+        "country": "CA",
+        "cross_street": "",
+        "formatted_address": "388 College St, Toronto ON M5T 1S7",
+        "locality": "Toronto",
+        "neighborhood": ["Harbord Village"],
+        "postcode": "M5T 1S7",
+        "region": "ON"
+      },
+      "name": "Voodoo Child",
+      "related_places": {},
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "4d13b509e3b5224b14da9143",
+      "categories": [
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13035,
+          "name": "Coffee Shop",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/coffeeshop_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13334,
+          "name": "Sandwich Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/deli_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 554,
+      "geocodes": {
+        "main": {
+          "latitude": 43.656656,
+          "longitude": -79.402671
+        },
+        "roof": {
+          "latitude": 43.656656,
+          "longitude": -79.402671
+        }
+      },
+      "link": "/v3/places/4d13b509e3b5224b14da9143",
+      "location": {
+        "address": "307 Augusta Ave",
+        "country": "CA",
+        "cross_street": "Btwn Oxford St & College St",
+        "formatted_address": "307 Augusta Ave (Btwn Oxford St & College St), Toronto ON M5T 2M2",
+        "locality": "Toronto",
+        "neighborhood": ["Downtown"],
+        "postcode": "M5T 2M2",
+        "region": "ON"
+      },
+      "name": "Café Pamenar",
+      "related_places": {},
+      "timezone": "America/Toronto"
+    },
+    {
+      "fsq_id": "55fb4f19498e141bd2492d4e",
+      "categories": [
+        {
+          "id": 10000,
+          "name": "Arts and Entertainment",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/default_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13034,
+          "name": "Café",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+            "suffix": ".png"
+          }
+        },
+        {
+          "id": 13065,
+          "name": "Restaurant",
+          "icon": {
+            "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+            "suffix": ".png"
+          }
+        }
+      ],
+      "chains": [],
+      "distance": 621,
+      "geocodes": {
+        "main": {
+          "latitude": 43.656009,
+          "longitude": -79.409254
+        },
+        "roof": {
+          "latitude": 43.656009,
+          "longitude": -79.409254
+        }
+      },
+      "link": "/v3/places/55fb4f19498e141bd2492d4e",
+      "location": {
+        "address": "489 College St",
+        "country": "CA",
+        "cross_street": "at Markham St",
+        "formatted_address": "489 College St (at Markham St), Toronto ON M6G 1A5",
+        "locality": "Toronto",
+        "neighborhood": ["Downtown Toronto"],
+        "postcode": "M6G 1A5",
+        "region": "ON"
+      },
+      "name": "Snakes & Lattes College",
+      "related_places": {
+        "children": [
+          {
+            "fsq_id": "60aae9bbc810d5712dacb38f",
+            "name": "Blissful Bird"
+          }
+        ]
+      },
+      "timezone": "America/Toronto"
+    }
+  ],
+  "context": {
+    "geo_bounds": {
+      "circle": {
+        "center": {
+          "latitude": 43.65178602773859,
+          "longitude": -79.40420867186434
+        },
+        "radius": 22000
+      }
+    }
+  }
+}
