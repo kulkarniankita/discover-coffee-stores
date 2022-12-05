@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from "react";
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -34,6 +34,7 @@ export async function getStaticProps(context) {
 }
 
 export default function Home(props) {
+  const { useEffect, useState, useContext } = React;
   const { handleTrackLocation, locationErrorMsg, isFindingLocation } =
     useTrackLocation();
 
