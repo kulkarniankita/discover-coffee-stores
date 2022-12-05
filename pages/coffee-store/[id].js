@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from "react";
+import React from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head";
@@ -45,6 +45,7 @@ export async function getStaticPaths() {
 }
 
 const CoffeeStore = (initialProps) => {
+  const { useEffect, useState, useContext } = React;
   const router = useRouter();
 
   const id = router.query.id;
@@ -153,9 +154,7 @@ const CoffeeStore = (initialProps) => {
       <div className={styles.container}>
         <div className={styles.col1}>
           <div className={styles.backToHomeLink}>
-            <Link href="/">
-              <a>← Back to home</a>
-            </Link>
+            <Link href="/">← Back to home</Link>
           </div>
           <div className={styles.nameWrapper}>
             <h1 className={styles.name}>{name}</h1>
